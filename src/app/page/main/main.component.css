@@ -1,0 +1,33 @@
+page {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.grid {
+    display:grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 20% 40% 40%;
+}
+
+app-header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+app-form {
+    grid-column: 3;
+    grid-row: 2 ;
+}
+
+app-display {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+app-list {
+    grid-column: 1;
+    grid-row: 2 ;
+}
+

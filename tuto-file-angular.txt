@@ -3,3 +3,27 @@ set import shortcut
 https://fireship.io/snippets/improving-long-relative-paths-imports/
 
 go to tsconfig.json 
+
+{
+    "CompilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "@core/*": ["app/core/*"]
+            "@services/*": ["app/services/*"]
+        }
+    }
+    # ...
+}
+
+
+set grid laout 
+
+.grid {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 100px 200px;
+    /* 
+    Ou en racourci 
+    grid-template: 10% 80% 10% / 100px 200px;
+    */
+}

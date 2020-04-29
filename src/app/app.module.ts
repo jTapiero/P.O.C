@@ -14,6 +14,8 @@ import { MainComponent } from './page/main/main.component';
 // componnent
 import { FormComponent } from './componnent/form/form.component';
 import { HeaderComponent } from './componnent/header/header.component';
+import { DisplayComponent } from './componnent/display/display.component';
+import { ListComponent } from './componnent/list/list.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { HeaderComponent } from './componnent/header/header.component';
     AppComponent,
     FormComponent,
     MainComponent,
-    HeaderComponent
+    HeaderComponent,
+    DisplayComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
