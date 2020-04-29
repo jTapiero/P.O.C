@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -14,7 +14,16 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@core/*":["app/core/*"],
+      "@page/*":["app/page/*"],
+      "@component/*":["app/componnent/*"],
+      "@deepstream/*":["app/deepstream/*"],
+      "@cesium/*":["app/cesium/*"],
+      "@service/*":["app/core/service/*"],
+      "@pipe/*":["app/core/pipe/*"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

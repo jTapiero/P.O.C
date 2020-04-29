@@ -1,0 +1,5 @@
+set import shortcut 
+
+https://fireship.io/snippets/improving-long-relative-paths-imports/
+
+go to tsconfig.json 
