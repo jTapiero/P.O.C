@@ -27,3 +27,14 @@ set grid laout
     grid-template: 10% 80% 10% / 100px 200px;
     */
 }
+
+.grid-item {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end:  span 2; /* L'élément s'étend sur 2 lignes */
+  /* racourci
+  grid-column: 1 / 3;
+  grid-row: 2 / span 1
+  */
+}
