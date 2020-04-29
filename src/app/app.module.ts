@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 
 // pipe
 
+// material
+// import { MatCardModule } from '@angular/material/card';
+
 // page
 import { MainComponent } from './page/main/main.component';
 
@@ -18,6 +21,7 @@ import { DisplayComponent } from './componnent/display/display.component';
 import { ListComponent } from './componnent/list/list.component';
 import { LoginPageComponent } from './page/login-page/login-page.component';
 import { LoginFormComponent } from './conponnent/login-form/login-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialFileInputModule } from 'ngx-material-file-input';
 
@@ -35,7 +39,9 @@ import { MaterialFileInputModule } from 'ngx-material-file-input';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialFileInputModule
+    MaterialFileInputModule,
+    // MatCardModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
