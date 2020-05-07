@@ -16,6 +16,8 @@ import { FormComponent } from './componnent/form/form.component';
 import { HeaderComponent } from './componnent/header/header.component';
 import { DisplayComponent } from './componnent/display/display.component';
 import { ListComponent } from './componnent/list/list.component';
+import { LoginPageComponent } from './page/login-page/login-page.component';
+import { LoginFormComponent } from './conponnent/login-form/login-form.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ListComponent } from './componnent/list/list.component';
     MainComponent,
     HeaderComponent,
     DisplayComponent,
-    ListComponent
+    ListComponent,
+    LoginPageComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,

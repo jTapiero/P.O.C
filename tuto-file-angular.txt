@@ -38,3 +38,10 @@ set grid laout
   grid-row: 2 / span 1
   */
 }
+
+
+set angular material 
+
+
+set url background
+background-image: url('../../assets/home-page-img/header-bg.jpg');

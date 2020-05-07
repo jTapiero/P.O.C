@@ -22,7 +22,8 @@
       "@deepstream/*":["app/deepstream/*"],
       "@cesium/*":["app/cesium/*"],
       "@service/*":["app/core/service/*"],
-      "@pipe/*":["app/core/pipe/*"]
+      "@pipe/*":["app/core/pipe/*"],
+      "@picture/*":["assets/picture/*"],
     }
   },
   "angularCompilerOptions": {
