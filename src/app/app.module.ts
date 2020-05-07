@@ -19,6 +19,7 @@ import { ListComponent } from './componnent/list/list.component';
 import { LoginPageComponent } from './page/login-page/login-page.component';
 import { LoginFormComponent } from './conponnent/login-form/login-form.component';
 
+import { MaterialFileInputModule } from 'ngx-material-file-input';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LoginFormComponent } from './conponnent/login-form/login-form.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialFileInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

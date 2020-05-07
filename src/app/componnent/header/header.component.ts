@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  public nameLog: string;
+
+  constructor() {
+    // this.setCurrentNameLog("something long enough");
+   }
 
   ngOnInit(): void {
+  }
+
+  private setCurrentNameLog(name: string): void {
+    this.nameLog = name;
   }
 
 }

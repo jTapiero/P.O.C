@@ -1,0 +1,26 @@
+header{
+    background-color:#20B2AA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 8vh;
+}
+
+header #name-app{
+    color: seashell;
+    background-color: #008B8B;
+    margin-left: 24px;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+header #log-file{
+    color: seashell;
+    background-color: #008B8B;
+    margin-right: 24px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    min-width: 450px;
+}
