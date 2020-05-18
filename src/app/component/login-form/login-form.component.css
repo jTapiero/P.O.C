@@ -1,0 +1,51 @@
+form {
+    width: 25em;
+    height: 32em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#008B8B;
+    border-radius: 8px;
+    /*border:35px solid rgba(255, 255, 255, 0.1)
+*/
+}
+
+form h1 {
+    color: seashell;
+}
+
+form label {
+    margin:2em auto 10px 3em ;
+    color: seashell;
+    size:64px ;
+}
+
+form input {
+    color:seashell ;
+    background-color: #007D7D ;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 20em;
+    border-style: none;
+}
+
+form input::placeholder {
+    color:seashell ;
+    opacity: 0.5;
+    padding-left: 15px;
+}
+
+form input::before {
+    padding-left: 15px;
+}
+
+form button{
+    color: seashell;
+    background-color: #007D7D;
+    border-radius: 5px;
+    border-style: none;
+    padding:15px;
+    width: 10em;
+    margin-top: 3em;
+}

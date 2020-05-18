@@ -1,0 +1,8 @@
+<form [formGroup]="logForm">
+    <input type="file" formControlName="fileInput" placeholder="Select File...">
+    <select formControlName="typeFileInput">
+        <option value="" disabled selected>logType</option>
+        <option *ngFor="let logType of logTypeList" [ngValue]="logType.type">{{logType.name}}</option>
+    </select> 
+    <button type="submit" (click)="OnSubmit()">Analyse</button>
+</form>

@@ -18,12 +18,14 @@
     "paths": {
       "@core/*":["app/core/*"],
       "@page/*":["app/page/*"],
-      "@component/*":["app/componnent/*"],
+      "@class/*":["app/class/*"],
+      "@component/*":["app/component/*"],
       "@deepstream/*":["app/deepstream/*"],
       "@cesium/*":["app/cesium/*"],
       "@service/*":["app/core/service/*"],
       "@pipe/*":["app/core/pipe/*"],
       "@picture/*":["assets/picture/*"],
+      "@log/*":["assets/sample-log/*"],
     }
   },
   "angularCompilerOptions": {

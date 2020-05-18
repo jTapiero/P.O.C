@@ -1,0 +1,50 @@
+[{
+    "id_boat":1,
+    "id_sensor":1,
+    "timestamp":162136600,
+    "longitude":45,
+    "latitude":32
+},
+{
+    "id_boat":1,
+    "id_sensor":1,
+    "timestamp":162136700,
+    "longitude":46,
+    "latitude":32
+},
+{
+    "id_boat":1,
+    "id_sensor":4,
+    "timestamp":162136800,
+    "longitude":47,
+    "latitude":32
+},
+{
+    "id_boat":1,
+    "id_sensor":4,
+    "timestamp":162136900,
+    "longitude":48,
+    "latitude":32
+},
+{
+    "id_boat":1,
+    "id_sensor":1,
+    "timestamp":162137000,
+    "longitude":49,
+    "latitude":32
+},
+{
+    "id_boat":1,
+    "id_sensor":1,
+    "timestamp":162137100,
+    "longitude":50,
+    "latitude":45
+},
+{
+    "id_boat":1,
+    "id_sensor":4,
+    "timestamp":162137200,
+    "longitude":51,
+    "latitude":32
+}
+]

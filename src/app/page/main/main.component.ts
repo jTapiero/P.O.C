@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Logfile } from '@class/logfile';
+import { LogFileReaderService } from '@service/log-file-reader.service';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  logFileInput: Logfile;
+
+  constructor(private logFileReaderService: LogFileReaderService ) {
+
+  }
 
   ngOnInit(): void {
+  }
+
+  onFileInput($event: Logfile): void {
+   this.logFileInput = $event;
+
   }
 
 }
