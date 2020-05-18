@@ -1,5 +1,5 @@
 <header>
     <div id="name-app">P.O.C Log</div>
     <div id="select-log-file"><app-form (logFileInput)="onNewInputFile($event)"></app-form></div>
-    <div *ngIf="nameLog" id="log-file">File : {{ nameLog }}</div>
+    <div *ngIf="nameLog" id="log-file">File : {{ nameLog | extractFileName }}</div>
 </header>

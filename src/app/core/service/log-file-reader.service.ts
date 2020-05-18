@@ -5,20 +5,37 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class LogFileReaderService {
+  public file: File;
+  private fileReader = new FileReader();
+  private fileResult: any;
 
   constructor(private http: HttpClient) {
-    /*
-    C:\\Users\\Elie\\Documents\\yossef army\\app\\src\\assets\\sample-log\\log-position\\log1-position.json
-    http://C:\\Users\\Elie\\Documents\\yossef army\\app\\src\\assets\\sample-log\\log-position\\log1-position.json
-    ../../assets/sample-log/log-position/log1-position.json
-    */
+    console.log('handleReadFile');
+    this.handleReadFile();
+
   }
 
   getJsonData(): any {
-   return this.http.get('http://:\\Users\\Elie\\Documents\\test\\log1-position.json');
+
   }
 
-  private getFileName(PathFile: string): boolean{
+  readFile(file: File): string {
+    this.fileReader.readAsText(file);
+    setTimeout(() =>{ console.log( JSON.parse(this.fileResult)); }, 5000);
+    return this.fileResult ;
+  }
+
+  private handleReadFile(): void {
+    this.fileReader.onloadend = ( e ) => {
+      this.fileResult = this.fileReader.result ;
+  };
+}
+
+  private getFileName(PathFile: string): string{
+    return ;
+  }
+
+  private getFileExtension(PathFile: string): string{
     return ;
   }
 
@@ -29,4 +46,11 @@ export class LogFileReaderService {
   private isJsonFile(nameFile: string): boolean{
     return ;
   }
+      /*
+    C:\\Users\\Elie\\Documents\\yossef army\\app\\src\\assets\\sample-log\\log-position\\log1-position.json
+    http://C:\\Users\\Elie\\Documents\\yossef army\\app\\src\\assets\\sample-log\\log-position\\log1-position.json
+    ../../assets/sample-log/log-position/log1-position.json
+    http://:\\Users\\Elie\\Documents\\test\\log1-position.json
+    return this.http.get('http://127.0.0.1/');
+    */
 }

@@ -1,7 +1,7 @@
 import { LogType } from '@class/log-type.enum';
+
 export interface Logfile {
-    name: string;
-    path: string;
+    file: File;
     typeLog: LogType;
-    extension?: string;
+    path: string;
 }

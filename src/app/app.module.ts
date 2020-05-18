@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 // service
 
 // pipe
+import { NameFilePipe } from './core/pipe/name-file.pipe';
 
 // material
 import { MatCardModule } from '@angular/material/card';
@@ -20,13 +21,14 @@ import { MainComponent } from './page/main/main.component';
 import { LoginPageComponent } from './page/login-page/login-page.component';
 
 // componnent
-import { FormComponent } from './component/form/form.component';
+import { FormComponent } from './component/header/form-input-file/form.component';
 import { HeaderComponent } from './component/header/header.component';
-import { DisplayComponent } from './component/display/display.component';
+import { DisplayComponent } from './component/cesium-display/cesium-display.component';
 import { ListComponent } from './component/list/list.component';
 import { LoginFormComponent } from './component/login-form/login-form.component';
 import { ViewLogComponent } from './component/view-log/view-log.component';
 import { SingleLogViewComponent } from './component/single-log-view/single-log-view.component';
+
 
 
 
@@ -42,6 +44,7 @@ import { SingleLogViewComponent } from './component/single-log-view/single-log-v
     LoginFormComponent,
     ViewLogComponent,
     SingleLogViewComponent,
+    NameFilePipe,
   ],
   imports: [
     BrowserModule,

@@ -4,5 +4,5 @@
         <option value="" disabled selected>logType</option>
         <option *ngFor="let logType of logTypeList" [ngValue]="logType.type">{{logType.name}}</option>
     </select> 
-    <button type="submit" (click)="OnSubmit()">Analyse</button>
+    <button type="submit" (click)="onSubmit($event)">Analyse</button>
 </form>

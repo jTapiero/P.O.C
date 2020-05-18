@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { LogFileReaderService } from '@service/log-file-reader.service';
 import { FormControl } from '@angular/forms';
-import { Logfile } from '@class/logfile';
+import { Logfile } from '@class/logfile.interf';
 
 @Component({
   selector: 'app-header',
@@ -15,16 +15,12 @@ export class HeaderComponent implements OnInit {
   public nameLog: string;
   public logField = new FormControl();
 
+  constructor() {}
 
-
-  constructor( private logFileReaderService: LogFileReaderService ) {
-    this.setCurrentNameLog('something long enough');
-   }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onNewInputFile($event: Logfile): void {
+    this.setCurrentNameLog($event.path);
     this.fileInput.emit($event);
   }
 
