@@ -1,5 +1,5 @@
 <div class="page grid">
     <app-header (fileInput)="onFileInput($event)" ></app-header>
-    <app-view-log></app-view-log>
+    <app-view-log [dataResult]="dataLog" ></app-view-log>
     <app-display></app-display>
 </div>

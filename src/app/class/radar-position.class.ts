@@ -1,7 +1,7 @@
 export class RadarPosition {
-    idBoat: number;
-    idSensor: number;
+    id_boat: number;
+    id_sensor: number;
     timestamp: number;
-    long: number;
-    lat: number;
+    longitude: number;
+    latitude: number;
 }

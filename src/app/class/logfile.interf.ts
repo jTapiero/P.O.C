@@ -4,4 +4,5 @@ export interface Logfile {
     file: File;
     typeLog: LogType;
     path: string;
+    result?: string;
 }

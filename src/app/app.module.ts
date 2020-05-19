@@ -24,10 +24,10 @@ import { LoginPageComponent } from './page/login-page/login-page.component';
 import { FormComponent } from './component/header/form-input-file/form.component';
 import { HeaderComponent } from './component/header/header.component';
 import { DisplayComponent } from './component/cesium-display/cesium-display.component';
-import { ListComponent } from './component/list/list.component';
+import { ListComponent } from './component/view-log/list-view-log/list.component';
 import { LoginFormComponent } from './component/login-form/login-form.component';
 import { ViewLogComponent } from './component/view-log/view-log.component';
-import { SingleLogViewComponent } from './component/single-log-view/single-log-view.component';
+import { SingleLogViewComponent } from './component/view-log/single-log-view/single-log-view.component';
 
 
 

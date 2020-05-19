@@ -1,2 +1,4 @@
-    <app-list></app-list>
-    <app-single-log-view></app-single-log-view>
+    <app-list-log-view [dataList]="dataResult"
+                       (SelectedLog)="displayselectedLog($event)">
+    </app-list-log-view>
+    <app-single-log-view [singleLog]="selectedLog"></app-single-log-view>
