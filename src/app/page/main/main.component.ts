@@ -28,4 +28,10 @@ export class MainComponent implements OnInit{
     this.logFileInput = $event  ;
     this.logReader.getJsonDataRequest($event);
   }
+
+  // private sortData(rawArray: RadarPosition[]): RadarPosition[] {
+  //   return rawArray.sort(( a , b) => {
+  //     a.timestamp. - b.timestamp;
+  //    });
+  // }
 }

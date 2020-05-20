@@ -8,6 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
+// cesium
+import { AngularCesiumModule } from 'angular-cesium';
+import { AngularCesiumWidgetsModule } from 'angular-cesium';
+
 // service
 
 // pipe
@@ -28,6 +32,7 @@ import { ListComponent } from './component/view-log/list-view-log/list.component
 import { LoginFormComponent } from './component/login-form/login-form.component';
 import { ViewLogComponent } from './component/view-log/view-log.component';
 import { SingleLogViewComponent } from './component/view-log/single-log-view/single-log-view.component';
+
 
 
 
@@ -53,7 +58,9 @@ import { SingleLogViewComponent } from './component/view-log/single-log-view/sin
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AngularCesiumModule.forRoot(),
+    AngularCesiumWidgetsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

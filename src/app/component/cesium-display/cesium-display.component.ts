@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { Cesium } from '/node';
 
 @Component({
   selector: 'app-display',
@@ -11,6 +12,7 @@ export class DisplayComponent implements OnInit {
    }
 
   ngOnInit(): void {
+
   }
 
 }
