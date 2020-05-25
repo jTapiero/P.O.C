@@ -2,5 +2,7 @@
     <li *ngFor="let item of dataList" (click)="onSelect($event,item)">
         <p>Sensor:{{item.id_sensor}}</p>
         <p>timestamp:{{item.timestamp}}</p>
+        <hr>
     </li>
+    
 </ul>

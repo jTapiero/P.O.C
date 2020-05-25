@@ -1,10 +1,10 @@
 <div class="single-log">
-    <div *ngIf="singleLog">
-        <p>{{singleLog.id_boat}}</p>
-        <p>{{singleLog.id_sensor}}</p>
-        <p>{{singleLog.timestamp}}</p>
-        <p>{{singleLog.longitude}}</p>
-        <p>{{singleLog.latitude}}</p>
+    <div *ngIf="singleLog" class="singleLog">
+        <p> ID Boat :{{ singleLog.id_boat }}</p>
+        <p> ID Sensor :{{ singleLog.id_sensor }}</p>
+        <p> ID Date :{{ singleLog.timestamp | date  }}</p>
+        <p> ID Long :{{ singleLog.longitude }}</p>
+        <p> ID Lat :{{ singleLog.latitude }}</p>
     </div>
 </div>
 

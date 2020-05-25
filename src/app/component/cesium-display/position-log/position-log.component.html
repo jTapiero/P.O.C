@@ -1,0 +1,9 @@
+<!-- <ac-layer [show]="showTracks" [context]="this" >  -->
+<ac-layer *ngFor="entity of listEntities" [show]="showTracks"  [context]="this" >
+    <ac-billboard-desc props="{
+        width:16,
+        height:16,
+        image:getImage(),
+        position: getPosition(entity)
+    }"></ac-billboard-desc>
+</ac-layer>

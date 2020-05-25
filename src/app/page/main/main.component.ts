@@ -16,7 +16,7 @@ export class MainComponent implements OnInit{
 
   constructor(private logReader: LogFileReaderService ) {
     this.logReader.responseDataText.subscribe( (data: RadarPosition[]) => {
-      this.dataLog = data;
+      this.dataLog = this.sortData(data);
     });
 
   }
@@ -29,9 +29,7 @@ export class MainComponent implements OnInit{
     this.logReader.getJsonDataRequest($event);
   }
 
-  // private sortData(rawArray: RadarPosition[]): RadarPosition[] {
-  //   return rawArray.sort(( a , b) => {
-  //     a.timestamp. - b.timestamp;
-  //    });
-  // }
+  private sortData(rawArray: RadarPosition[]): RadarPosition[] {
+     return rawArray.sort((a, b) =>  a.timestamp - b.timestamp );
+  }
 }

@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 // cesium
 import { AngularCesiumModule } from 'angular-cesium';
 import { AngularCesiumWidgetsModule } from 'angular-cesium';
+// import { CameraService } from 'angular-cesium';
 
 // service
 
@@ -32,6 +33,7 @@ import { ListComponent } from './component/view-log/list-view-log/list.component
 import { LoginFormComponent } from './component/login-form/login-form.component';
 import { ViewLogComponent } from './component/view-log/view-log.component';
 import { SingleLogViewComponent } from './component/view-log/single-log-view/single-log-view.component';
+import { PositionLogComponent } from './component/cesium-display/position-log/position-log.component';
 
 
 
@@ -50,6 +52,7 @@ import { SingleLogViewComponent } from './component/view-log/single-log-view/sin
     ViewLogComponent,
     SingleLogViewComponent,
     NameFilePipe,
+    PositionLogComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +64,7 @@ import { SingleLogViewComponent } from './component/view-log/single-log-view/sin
     FormsModule,
     AngularCesiumModule.forRoot(),
     AngularCesiumWidgetsModule,
+  //  CameraService
   ],
   providers: [],
   bootstrap: [AppComponent]
